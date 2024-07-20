@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Options</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <div class="options-container">
+      <h1>Options</h1>
+      <p class="tagline">How do you want to remember your mortality?</p>
+      <form id="options-form">
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" required /><br />
+
+        <label for="mode">Select Color:</label>
+        <select id="mode" name="mode">
+          <option value="light">Light Mode</option>
+          <option value="dark">Dark Mode</option>
+          <option value="custom">Custom</option></select
+        ><br />
+
+        <div id="custom-colors" style="display: none">
+          <label for="background-color">Background Color:</label>
+          <input
+            type="color"
+            id="background-color"
+            name="background-color"
+          /><br />
+          <label for="week-color">Week Color:</label>
+          <input type="color" id="week-color" name="week-color" /><br />
+        </div>
+
+        <button type="submit">Save</button>
+      </form>
+    </div>
+    <div id="toast" class="toast">Options saved.</div>
+    <script src="options.js" defer></script>
+  </body>
+</html>
