@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <link rel="stylesheet" href="onboarding.css" />
+    <script defer src="libs/gsap.min.js"></script>
+    <script defer src="onboarding.js"></script>
+  </head>
+  <body>
+    <div id="container" class="container">
+      <div id="initialText" class="initial-text">
+        <!-- Initial text will be split into spans by JavaScript -->
+      </div>
+      <div id="weeks" class="weeks-grid"></div>
+      <div id="introText" class="intro-text">
+        <!-- Final text will be split into spans by JavaScript -->
+      </div>
+      <div id="birthdateInput" class="birthdate-input">
+        <label for="birthdate">When were you born?</label>
+        <input type="date" id="birthdate" name="birthdate" />
+        <button id="saveBirthdate" class="save-button">&rarr;</button>
+      </div>
+    </div>
+  </body>
+</html>

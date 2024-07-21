@@ -1,0 +1,121 @@
+body {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    font-size: 6.9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    background-color: #202020; /* Dark mode background color */
+    overflow: hidden; /* Prevent scrolling unless necessary */
+    position: relative;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevent scrolling unless necessary */
+    flex-direction: column; /* Ensure items are stacked vertically */
+}
+
+.weeks-grid {
+    display: grid;
+    grid-template-columns: repeat(13, auto); /* 13 columns for the groups */
+    gap: 10px; /* Space between groups */
+    justify-content: center;
+    max-height: 100%; /* Ensure the grid does not exceed the container height */
+    position: relative; /* Make it possible to move the grid */
+}
+
+.weeks-group {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns per group */
+    gap: 0.5px; /* Reduce space between weeks in a group */
+}
+
+.week {
+    width: 8px; /* Adjust width to ensure elements fit */
+    height: 8px; /* Adjust height to ensure elements fit */
+    display: inline-block;
+    text-align: center;
+    line-height: 8px; /* Adjust line-height to match the new size */
+    color: #ffffff; /* White color for the dots */
+    margin: -1px; /* Negative margin to reduce spacing */
+    opacity: 0; /* Start with dots hidden */
+}
+
+.initial-text {
+    font-size: 16px;
+    color: #ffffff;
+    opacity: 1; /* Start visible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow text to wrap */
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Translate to center */
+}
+
+.intro-text {
+    font-size: 16px;
+    color: #ffffff;
+    opacity: 1; /* Start visible */
+    margin-top: 35px; /* Space between text and grid */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow text to wrap */
+}
+
+.birthdate-input {
+    font-size: 16px;
+    color: #ffffff;
+    opacity: 0; /* Start hidden */
+    flex-direction: row; /* Align items horizontally */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    display: none; /* Start hidden */
+    margin-top: 18px;
+}
+
+.birthdate-input input {
+    margin-left: 10px; /* Space between label and input */
+    padding: 5px;
+    font-size: 16px;
+}
+
+.save-button {
+    margin-left: 10px; /* Space between input and button */
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.initial-text span, .intro-text span {
+    opacity: 0; /* Start each letter hidden */
+}
+
+.weeks-left-text {
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 35px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow text to wrap */
+}

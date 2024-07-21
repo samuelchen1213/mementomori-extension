@@ -1,7 +1,7 @@
 chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.sync.get(["birthday"], (result) => {
     if (!result.birthday) {
-      chrome.runtime.openOptionsPage();
+      chrome.tabs.create({ url: "onboarding.html" });
     } else {
       updateTitle();
     }

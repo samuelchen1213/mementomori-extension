@@ -8,7 +8,7 @@ body {
     height: 100vh;
     margin: 0;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #202020;
     overflow: hidden; /* Prevent scrolling unless necessary */
     position: relative; /* Add this line */
   }
