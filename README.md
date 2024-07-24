@@ -8,7 +8,7 @@ Memento Mori is a Google Chrome extension designed to provide users with a visua
 
 It is available to install from the Chrome Web Store:
 
-[https://chrome.google.com/webstore/detail/your-extension-id](https://chrome.google.com/webstore/detail/your-extension-id)
+[https://chromewebstore.google.com/detail/memento-mori/pojhamjbgoomlabbleofphjbbpaclbco](https://chrome.google.com/webstore/detail/your-extension-id](https://chromewebstore.google.com/detail/memento-mori/pojhamjbgoomlabbleofphjbbpaclbco)
 
 Memento Mori does not collect or store any data remotely. All data is stored locally using Chrome's `chrome.storage.sync` feature.
 
